@@ -7,3 +7,4 @@ RUN ["powershell", "New-Item", "-Path \"C:\"", "-ItemType \"directory\"", "-Name
 WORKDIR C:/temp
 COPY bitcoinconf.ps1 C:/temp/
 RUN powershell.exe -ExecutionPolicy Bypass c:\temp\bitcoinconf.ps1
+EXPOSE 8332 8333
